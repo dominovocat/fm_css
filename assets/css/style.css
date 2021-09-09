@@ -49,13 +49,33 @@ a{
 .link::after{
   content: '';
   display: block;
-  width: 100%;
+  width: 0%;
   height: 3px;
   position: absolute;
-  background-color: blue;
+  bottom: -10%;
+  right: -0%;
+  transition: width 1s ease;
 }
-
-
+.link:hover::after{
+  width: 100%;
+  background-color:  blue;
+ 
+}
+.link::before{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  top: -10%;
+  left: -0%;
+  transition: width 1s ease;
+}
+.link:hover::before{
+  width: 100%;
+  background-color:  blue;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 
 
 
